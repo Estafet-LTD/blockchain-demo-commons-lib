@@ -18,7 +18,7 @@ public class WalletUtils {
 			String seed = UUID.randomUUID().toString();
 			ECKeyPair ecKeyPair = Keys.createEcKeyPair();
 			WalletFile aWallet = Wallet.createLight(seed, ecKeyPair);
-			return aWallet.getAddress();
+			return "x0"+aWallet.getAddress();
 		} catch (InvalidAlgorithmParameterException | NoSuchAlgorithmException | NoSuchProviderException
 				| CipherException e) {
 			throw new RuntimeException(e);
