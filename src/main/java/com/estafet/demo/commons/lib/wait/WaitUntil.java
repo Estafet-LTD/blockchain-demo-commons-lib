@@ -9,7 +9,7 @@ public abstract class WaitUntil {
 	private final int timeout;
 	
 	public WaitUntil() {
-		this(60000);
+		this(120000);
 	}
 	
 	public WaitUntil(int timeout) {
